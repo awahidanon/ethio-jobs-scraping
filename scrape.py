@@ -28,7 +28,7 @@ def get_jobs_in_afar():
             state = job.get('state', 'N/A')
 
             # Check if the job state is Afar
-            if state == 'Afar' or "Afar Region":
+            if state == 'Afar' or state == "Afar Regional State":
                 jobs.append({
                     'title': title,
                     'company': company,
